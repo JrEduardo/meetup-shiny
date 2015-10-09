@@ -1,5 +1,5 @@
 ---
-title: "shiny-rautu"
+title: "shiny-tuto"
 author: "Eduardo Elias Ribeiro Junior"
 output:
   html_document:
@@ -15,19 +15,19 @@ Mas está sujeito a atualização, pois pretende ser um guia inicial para
 aprendizado **shiny**. A versão utilizada na apresentação está
 disponível em [link][meetupedu].
 
-
 O repositório está estruturado da seguinte forma:
+
+O diretório `apps` é responsável por armazenar os subdiretórios das
+aplicações em **shiny** elaboradas (aqui estão os códidos fonte, `ui.R`
+e `server.R`), o diretório `images` armazena as images utilizadas para 
+explicação e finalmente os slides apresentados no evento são resultados 
+da compilação do arquivo `shiny-pres.Rmd`. Porém como esta apresentação 
+contém resultados **shiny**, sua visualização será possível a partir de 
+`rmarkdown::run("shiny-pres.Rmd")`.
 
 ```{r, engine = "sh", echo = FALSE}
 tree
 ```
-
-Onde o diretório `apps` é responsável por armazenar os subdiretórios das
-aplicações em **shiny** elaboradas (aqui estão os códidos fonte, `ui.R`
-e `server.R`), o diretório `presentation` armazena o código fonte dos
-slides apresentados no evento e finalmente o arquivo `shiny-rautu.md`
-(resultado da compilação de `shiny-rautu.Rmd`) é o arquivo tutorial para
-utilização do **shiny**.
 
 [meetup]: www.meetup.com/pt/useR-SP/
 [meetupedu]: www.pet.est.ufpr.br/meetupshiny
