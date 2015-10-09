@@ -1,0 +1,49 @@
+---
+title: Meu documento dinâmico com shiny
+author: Eduardo E. R. Junior
+output: html_document
+runtime: shiny
+---
+
+## Escolha a cor do histograma
+
+O legal do shiny é que conseguimos mesclar escrita markdown com
+aplicações `shiny` facilmente.
+
+Apenas criando um chunk com os objetos `ui` e `server` e rodando a
+aplicação com alguma função `shiny` conseguimos inserir uma aplicação.
+
+```{r, echo = FALSE}
+library(shiny)
+
+ui <- fluidPage(
+    actionButton("change", "Mude a cor"),
+
+    plotOutput("hist")
+)
+
+server <- function(input, output){
+    output$hist <- renderPlot({
+        input$change
+        col <- sample(colors(), size = 1)
+        hist(rnorm(100), col = col)
+    })
+}
+
+shinyApp(ui = ui, server = server)
+```
+
+Então com este relatório podemos modificar a cor do histograma conforme
+nosso gosto.
+
+## Relatórios dinâmicos
+
+Lembre-se de que estamos criando um documento `Rmd`, e quem cuida da
+compilação de documentos `Rmd` é o pacote `rmarkdown`. Neste pacote,
+normalmente usamos a função `render` para compilar nossos documentos,
+porém, para documentos com `runtime: shiny` existe uma função,
+`rmarkdown::render()` para devida compilação. 
+
+Ainda vale destacar que o *output* desta função não será um outro
+arquivo de saída. Ao compilar o `arquivo.Rmd` teremos o mesmo arquivo
+aberto em um navegador utilizando um processo R do nosso computador.

@@ -1,0 +1,34 @@
+---
+title: "shiny-rautu"
+author: "Eduardo Elias Ribeiro Junior"
+output:
+  html_document:
+    toc: false
+    theme: flatly
+    keep_md: true
+---
+
+Utilização básica do pacote **shiny** para criação de aplicativos web
+com R. Este material foi elaborado inicialmente para apresentação no
+evento [meetup - useR-SP][meetup], realizado em 09 de outubro de 2015.
+Mas está sujeito a atualização, pois pretende ser um guia inicial para
+aprendizado **shiny**. A versão utilizada na apresentação está
+disponível em [link][meetupedu].
+
+
+O repositório está estruturado da seguinte forma:
+
+```{r, engine = "sh", echo = FALSE}
+tree
+```
+
+Onde o diretório `apps` é responsável por armazenar os subdiretórios das
+aplicações em **shiny** elaboradas (aqui estão os códidos fonte, `ui.R`
+e `server.R`), o diretório `presentation` armazena o código fonte dos
+slides apresentados no evento e finalmente o arquivo `shiny-rautu.md`
+(resultado da compilação de `shiny-rautu.Rmd`) é o arquivo tutorial para
+utilização do **shiny**.
+
+[meetup]: www.meetup.com/pt/useR-SP/
+[meetupedu]: www.pet.est.ufpr.br/meetupshiny
+
