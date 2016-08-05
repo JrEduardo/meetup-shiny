@@ -1,8 +1,8 @@
 ---
 title: Shiny
 subtitle: A web application framework for R
-author: Eduardo Junior - PET Estatística UFPR 
-output: 
+author: Eduardo Junior - PET Estatística UFPR
+output:
   ioslides_presentation:
     logo: images/logo.png
     highlight: pygments
@@ -10,20 +10,11 @@ output:
     transition: slower
     widescreen: yes
     css: io2013.css
-runtime: shiny
 ---
 
 # O que é o shiny?
 
-## 
-```{r, echo = FALSE}
-library(shiny)
-## library(shinyGlobe)
-## shinyAppDir("apps/shinyGlobe/")
-shinyAppDir(system.file("examples/01_hello", package="shiny"))
-```
-
-<!-- <iframe scrolling="no" frameborder="0" height="400" width="100%" src="http://shiny.leg.ufpr.br/eduardo/meetup/"></iframe> -->
+<!-- GIF -->
 
 ## Produto do RStudio
 
@@ -49,7 +40,7 @@ shinyAppDir(system.file("examples/01_hello", package="shiny"))
 <center>
 <img src="images/shinyserver.svg"  width="800px">
 </center>
- 
+
 ## Shiny apps
 <center>
 <img src="images/shinyapps.svg"  width="800px">
@@ -78,17 +69,17 @@ shinyAppDir(system.file("examples/01_hello", package="shiny"))
 <img src="images/shinygithub.svg"  width="800px">
 </center>
 
-## 
+##
 <center>
 <img src="images/ideia.svg"  width="800px">
 </center>
 
-## 
+##
 <center>
 <img src="images/ideia0.svg"  width="800px">
 </center>
 
-## 
+##
 <center>
 <img src="images/ideia0a.svg"  width="800px">
 </center>
@@ -110,7 +101,7 @@ shinyAppDir(system.file("examples/01_hello", package="shiny"))
      * **rpanel**
      * **gWidgets**
      * **shiny**
- 
+
 ##
 <center>
 <img src="images/reactive0.png"  width="800px">
@@ -126,85 +117,85 @@ shinyAppDir(system.file("examples/01_hello", package="shiny"))
 <img src="images/reactive2.png"  width="800px">
 </center>
 
-## 
+##
 <center>
 <img src="images/ideia2.svg"  width="800px">
 </center>
 
 # Construindo um aplicativo shiny
 
-## 
+##
 <center>
 <img src="images/tipos_apps.svg"  width="1000px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain0.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain11.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain1.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain2.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain21.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain22.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain3.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain31.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain32.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain33.svg"  width="900px">
 </center>
 
 
-## 
+##
 <center>
 <img src="images/plain4.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain41.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain42.svg"  width="900px">
 </center>
 
-## 
+##
 <center>
 <img src="images/plain43.svg"  width="900px">
 </center>
@@ -254,13 +245,13 @@ shinyAppDir(system.file("examples/01_hello", package="shiny"))
 <img src="images/emacs1.svg"  width="800px">
 </center>
 
-# Praticando 
+# Praticando
 
 # Relatórios Shiny
 
 ##
 
-# Praticando 
+# Praticando
 
 # Compartilhando seus apps
 
@@ -291,7 +282,7 @@ rsconnetc::deployApp("./apps/")
 ## Pacotes adicionais
 <br>
 
-> ### shinythemes 
+> ### shinythemes
 [rstudio/shinythemes](http://rstudio.github.io/shinythemes/)
 
 <br>
@@ -326,4 +317,3 @@ rsconnetc::deployApp("./apps/")
 * [Google](https://www.google.com/)
 
 # Obrigado!
-
